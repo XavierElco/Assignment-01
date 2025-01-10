@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderSystem</title>
+    <style>
+        .order {
+            width:925px;
+            background-color: rgb(255, 255, 255);
+            font-family: "Microsoft YaHei", "SimSun", "Helvetica", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 40px auto;
+            margin-left: 40px ;
+            position: relative;
+        }
+        .menuDrink{
+            width:390px;
+            height:215px;
+            background: linear-gradient(135deg, rgba(8, 5, 5, 0.9), rgba(255, 255, 255, 0.5)),
+                url(A2-img/pexels-ifreestock-616836.jpg); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            padding:30px;
+            border-radius: 15px;
+        }
+
+        .menuFood{
+            width:390px;
+            height:215px;
+            background: linear-gradient(135deg, rgb(151, 131, 3), rgba(255, 255, 255, 0.2)),
+                url(A2-img/pexels-robinstickel-70497.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            padding:30px;
+            border-radius: 15px;
+        }
+        h1 {
+            width:200px;
+            font-size: 25px;
+            font-weight:550;
+            color:whitesmoke;
+            transform: translate(5px, 5px);
+            position:relative;
+        }
+        p {
+            font-size:12px;
+            font-weight: 1;
+            width:350px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position:relative;
+            
+        }
+        #button {
+            width:200px;
+            height:45px;
+            font-weight: 550;
+            border-radius: 3px;
+            transform: translate(-195px, 140px);
+            border: 0.8px solid whitesmoke;
+            background-color:transparent;
+            color:whitesmoke;
+            position:relative;
+        }
+        #button:hover{
+            background-color: rgba(255, 255, 255, 0.2); 
+        }
+        #button:active {
+            background-color: rgba(255, 255, 255, 0.5); 
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="order">
+        <div class="menuFood">
+            <h1>Food Menu
+                <p>We offer a wide variety of food options, 
+                    including fast food, Asian cuisine, Western dishes, and beverages. 
+                    Click the button below for more details!
+                </p>
+            </h1>
+            <button type="submit" id="button"> READ MORE
+            </button>
+        </div>
+        <div class="menuDrink">
+            <h1>Drink Menu
+                <p>We offer a wide variety of food options, 
+                    including fast food, Asian cuisine, Western dishes, and beverages. 
+                    Click the button below for more details!
+                </p>
+            </h1>
+            <button type="submit" id="button"> READ MORE
+        </div>
+    </div>
+</body>
+</html>
