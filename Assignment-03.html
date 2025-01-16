@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const message = "你的购物车满了";
+        let shoppingList = ["Apple", "Banana", "Orange"];
+        shoppingList.push("Strawberry", "Potato")
+        console.log(shoppingList);
+        shoppingList.pop()
+        console.log(shoppingList);
+
+        function checkShoppingList(shoppingList) {
+            if (shoppingList.length >= 5) {
+                console.log(message);
+                return false;
+            }
+            return true;
+        }
+
+        if (checkShoppingList(shoppingList)) {
+            for (let i = 1; i <= shoppingList.length; i++) {
+
+                console.log(i-1+'.', shoppingList[i-1]);
+            }
+        }
+
+        function isInShoppingList (itemName) {
+            return shoppingList.indexOf(itemName) !== -1
+        }
+
+        let item = {
+            name: "Apple",
+            price: 3.00,
+            quantity: 3
+        };
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
